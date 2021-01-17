@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Universidade CCPR",
+    title: "Jornada UOU",
   },
   plugins: [
     "gatsby-plugin-sharp",
@@ -23,5 +23,14 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Open Sans:400,700`
+        ],
+        display: 'swap'
+      }
+    }
   ],
 };
