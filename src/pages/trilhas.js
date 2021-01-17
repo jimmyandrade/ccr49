@@ -21,7 +21,7 @@ const TracksPage = ({ data }) => (
                                     <Img fluid={data.traineeTrack.childImageSharp.fluid} />
                                 </CardMedia>
                                 <CardContent>
-                                    <Typography component={"h3"} variant={"h6"}>Preparação para o programa de aprendiz e estagiário</Typography>
+                                    <Typography component={"h3"} variant={"h6"}>Preparação para o programa<br />de aprendiz e estagiário</Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
@@ -33,7 +33,7 @@ const TracksPage = ({ data }) => (
                                     <Img fluid={data.financeMusic.childImageSharp.fluid} />
                                 </CardMedia>
                                 <CardContent>
-                                    <Typography component={"h3"} variant={"h6"}>Aprendendo finanças através da música</Typography>
+                                    <Typography component={"h3"} variant={"h6"}>Aprendendo finanças<br />através da música</Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
@@ -42,10 +42,10 @@ const TracksPage = ({ data }) => (
                         <Card>
                             <CardActionArea>
                                 <CardMedia>
-
+                                    <Img fluid={data.soccerEmployment.childImageSharp.fluid} />
                                 </CardMedia>
                                 <CardContent>
-                                    <Typography component={"h3"} variant={"h6"}>Paixão pelo futebol e como encontrar um emprego</Typography>
+                                    <Typography component={"h3"} variant={"h6"}>Paixão por futebol<br />e como encontrar um emprego</Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
@@ -62,6 +62,13 @@ export default TracksPage;
 export const query = graphql`
 query TrackImagesQuery {
     financeMusic: file(relativePath: { eq: "crianca-tocando-violao.jpeg" }) {
+        childImageSharp {
+            fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid_withWebp
+            }
+        }
+    }
+    soccerEmployment: file(relativePath: { eq: "menina-com-bola-de-futebol.jpeg" }) {
         childImageSharp {
             fluid(maxWidth: 700) {
                 ...GatsbyImageSharpFluid_withWebp

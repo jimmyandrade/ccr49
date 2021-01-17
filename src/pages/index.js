@@ -13,7 +13,7 @@ import {
     Typography
 } from "@material-ui/core";
 import {useSiteMetadata} from "../hooks/useSiteMetadata";
-import {BenefitsSection} from "../components/BenefitsSection";
+import {BonusSection} from "../components/BonusSection";
 
 // markup
 const IndexPage = ({ data }) => {
@@ -49,7 +49,7 @@ const IndexPage = ({ data }) => {
 
             <Divider />
 
-            <BenefitsSection siteTitle={title} />
+            <BonusSection title={"Bônus UOU"} />
 
 
         </Container>
