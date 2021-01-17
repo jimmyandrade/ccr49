@@ -6,7 +6,9 @@ export const Logo = ({ alt, ...otherProps }) => {
 
     const styles = {
         root: {
+            minHeight: 40,
             maxHeight: 70,
+            minWidth: 70,
         }
     };
     const useStyles = makeStyles(styles, { name: "Logo" });

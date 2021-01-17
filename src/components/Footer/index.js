@@ -21,7 +21,7 @@ export const Footer = ({title}) => {
                     <time dateTime={2021}>2021</time>
                     {" "}
                     <strong>{title}</strong>
-                    {" "}
+                    {" "} - Valorize seu caminho
                     <br />
                     Crescimento. Evolução. Autonomia.
                 </Typography>

@@ -8,11 +8,12 @@ import {
     Card,
     CardContent,
     CardMedia,
-    Container,
+    Container, Divider,
     Grid,
     Typography
 } from "@material-ui/core";
 import {useSiteMetadata} from "../hooks/useSiteMetadata";
+import {BenefitsSection} from "../components/BenefitsSection";
 
 // markup
 const IndexPage = ({ data }) => {
@@ -24,8 +25,8 @@ const IndexPage = ({ data }) => {
         <Container component={"main"}>
             <title>{title} - Valorize a sua jornada</title>
             <Typography component={"h1"} variant={"srOnly"}>Página inicial</Typography>
-            <Grid container>
-                <Grid item>
+            <Grid container spacing={2}>
+                <Grid item xs={12} sm={6}>
                     <Card>
                         <CardMedia>
                             <Img fluid={data.file.childImageSharp.fluid} />
@@ -37,10 +38,20 @@ const IndexPage = ({ data }) => {
                         </CardContent>
                     </Card>
                 </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Box component={Card} mb={2}>
+                        <CardContent>
+                            <Typography component={"h2"} variant={"h2"}>Anuncie aqui</Typography>
+                        </CardContent>
+                    </Box>
+                </Grid>
             </Grid>
-            <Box component={Card} mb={2}>
-                Anúncio
-            </Box>
+
+            <Divider />
+
+            <BenefitsSection siteTitle={title} />
+
+
         </Container>
       </Layout>
   )

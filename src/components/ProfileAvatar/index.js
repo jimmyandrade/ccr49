@@ -1,19 +1,10 @@
-import {Avatar, makeStyles} from "@material-ui/core";
-import {graphql, Link as GatsbyLink, useStaticQuery} from "gatsby";
+import {graphql, useStaticQuery} from "gatsby";
 import * as React from "react";
 import Img from "gatsby-image";
+import {Avatar} from "../Avatar";
 
 export const ProfileAvatar = ({size, ...props}) => {
 
-    const styles = {
-        large: {
-            height: 77,
-            width: 77
-        }
-    };
-    const useStyles = makeStyles(styles, { name: "ProfileAvatar" });
-
-    const { large } = useStyles();
 
     const data = useStaticQuery(
         graphql`
@@ -37,7 +28,7 @@ query ProfileAvatarImageQuery {
     );
 
     return (
-        <Avatar className={size === "large" ? large : ""}>
+        <Avatar size={size}>
             {
                 size === "large" ?
                     <Img {...props} fixed={data.large.childImageSharp.fixed} /> :
