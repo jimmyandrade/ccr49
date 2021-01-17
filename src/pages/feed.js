@@ -7,7 +7,7 @@ const FeedPage = () => (
         <Container>
             <Card>
                 <CardContent>
-                    Nome da pessoa entrou na UOU Jornada
+                    Nome da pessoa entrou na Jornada UOU
                 </CardContent>
                 <CardActions>
 
