@@ -9,6 +9,7 @@ import {
     CardContent,
     CardMedia,
     Container,
+    Grid,
     Typography
 } from "@material-ui/core";
 import {useSiteMetadata} from "../hooks/useSiteMetadata";
@@ -22,21 +23,21 @@ const IndexPage = ({ data }) => {
       <Layout>
         <Container component={"main"}>
             <title>{title} - Valorize a sua jornada</title>
-            {/*<TextField*/}
-            {/*    label={<abbr title={"Cadastro de Pessoa Física"}>CPF</abbr>}*/}
-            {/*    variant={"outlined"}*/}
-            {/*/>*/}
             <Typography component={"h1"} variant={"srOnly"}>Página inicial</Typography>
-            <Box component={Card} mb={2}>
-                <CardMedia>
-                    <Img fluid={data.file.childImageSharp.fluid} />
-                </CardMedia>
-                <CardContent>
-                    <Typography component={"h2"} gutterBottom={true} variant={"h4"}>Trilhas</Typography>
-                    <Typography component={"p"} paragraph={true} variant={"body2"}>Conteúdos agrupados e ordenados para facilitar sua aprendizagem</Typography>
-                    <Button component={GatsbyLink} to={"/trilhas"} variant={"outlined"}>Ver trilhas</Button>
-                </CardContent>
-            </Box>
+            <Grid container>
+                <Grid item>
+                    <Card>
+                        <CardMedia>
+                            <Img fluid={data.file.childImageSharp.fluid} />
+                        </CardMedia>
+                        <CardContent>
+                            <Typography component={"h2"} gutterBottom={true} variant={"h4"}>Trilhas</Typography>
+                            <Typography component={"p"} paragraph={true} variant={"body2"}>Conteúdos agrupados e ordenados para facilitar sua aprendizagem</Typography>
+                            <Button component={GatsbyLink} to={"/trilhas"} variant={"outlined"}>Ver trilhas</Button>
+                        </CardContent>
+                    </Card>
+                </Grid>
+            </Grid>
             <Box component={Card} mb={2}>
                 Anúncio
             </Box>

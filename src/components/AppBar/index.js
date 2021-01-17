@@ -1,4 +1,4 @@
-import {AppBar as MaterialAppBar, Avatar, Box, Link, Toolbar, Typography} from "@material-ui/core";
+import {AppBar as MaterialAppBar, Box, Link, Toolbar, Typography} from "@material-ui/core";
 import {Link as GatsbyLink} from "gatsby";
 import * as React from "react";
 import {Logo} from "../Logo";
@@ -13,7 +13,9 @@ export const AppBar = ({title}) => (
                     <Logo alt={`Logotipo de ${title}`}  />
                 </Link>
             </Box>
-            <ProfileAvatar alt={`Imagem de perfil de ${title}`} />
+            <GatsbyLink to={"/perfil"}>
+                <ProfileAvatar alt={`Imagem de perfil de ${title}`} />
+            </GatsbyLink>
         </Toolbar>
     </MaterialAppBar>
 );

@@ -33,7 +33,7 @@ const ProfilePage = () => {
         <main>
             <Container>
                 <Typography component={"h1"} variant={"h4"}>
-                    <ProfileAvatar alt={`Imagem de perfil de ${title}`} /> {fullName}
+                    <ProfileAvatar alt={`Imagem de perfil de ${title}`} size={"large"} /> {fullName}
                 </Typography>
                 <Typography component={"h2"} variant={"h5"}>Conquistas</Typography>
 
