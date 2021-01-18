@@ -14,7 +14,7 @@ const NotFoundPage = () => {
             <Typography component={"h1"} gutterBottom={true} variant={"h2"}>Página não&nbsp;encontrada</Typography>
             <Typography component={"p"} paragraph={true} variant={"h4"}>
               Desculpe{" "}
-              <span role="img" aria-label="Pensive emoji">
+              <span role="img" aria-label="Emoji pensativo">
                 😔
               </span>{" "}
               a página que você procura não foi encontrada.
