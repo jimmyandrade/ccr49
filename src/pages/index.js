@@ -28,9 +28,9 @@ const IndexPage = ({ data }) => {
                 <title>{title} - Valorize a sua jornada</title>
             </Helmet>
             <Typography component={"h1"} variant={"srOnly"}>Página inicial</Typography>
-            <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
-                    <Box component={Card} mb={2}>
+            <Grid alignItems="stretch" container justify={"center"} spacing={2}>
+                <Grid alignItems="stretch" item xs={12} sm={6}>
+                    <Box component={Card} mb={2} height={"100%"}>
                         <CardMedia>
                             <Img fluid={data.tracksImage.childImageSharp.fluid} />
                         </CardMedia>
@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <Box component={Card} mb={2}>
+                    <Box component={Card} mb={2} height={"100%"}>
                         <CardMedia>
                             <Img fluid={data.adsImage.childImageSharp.fluid} />
                         </CardMedia>
