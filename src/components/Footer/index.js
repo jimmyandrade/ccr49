@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Box, Container, makeStyles, Typography} from "@material-ui/core";
+import {Box, Container, Link, makeStyles, Typography} from "@material-ui/core";
 
 export const Footer = ({title}) => {
 
@@ -24,6 +24,11 @@ export const Footer = ({title}) => {
                     {" "} - Valorize seu caminho
                     <br />
                     Crescimento. Evolução. Autonomia.
+                </Typography>
+                <Typography component={"p"} paragraph={true} variant={"caption"}>
+                    <Link color={"inherit"} href={"#"} underline={"always"}>Política de privacidade</Link>
+                    &nbsp;
+                    <Link color={"inherit"} href={"#"} underline={"always"}>Proteção e uso de dados</Link>
                 </Typography>
             </Box>
         </Box>

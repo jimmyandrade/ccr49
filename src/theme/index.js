@@ -30,6 +30,17 @@ export const theme = createMuiTheme({
                 border: "1px solid #535353"
             }
         },
+        MuiCardMedia: {
+            root: {
+                maxHeight: 400,
+                overflow: "hidden"
+            }
+        },
+        MuiCardContent: {
+            root: {
+                position: "relative"
+            }
+        },
         MuiOutlinedInput: {
             root: {
                 borderRadius: 0,
