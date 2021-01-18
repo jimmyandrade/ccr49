@@ -8,7 +8,7 @@ import { Link as GatsbyLink } from "gatsby";
 const TracksPage = ({ data }) => (
     <Layout>
         <main>
-            <Container >
+        <Container >
                 <Typography component={"h2"} variant={"h4"}>Trilhas</Typography>
                 <Typography gutterBottom={true} paragraph={true}>
                     Ensino de <i lang={"en"}>hard skills</i> por atividades lúdicas
