@@ -17,7 +17,14 @@ query {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }
-    } 
+    }
+    movieTheaterImage: file(relativePath: { eq: "interior-de-um-teatro.jpeg" }) {
+        childImageSharp {
+            fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid_withWebp
+            }
+        }
+    }
 }
         `
     )
@@ -30,9 +37,12 @@ query {
                 </Typography>
                 <Typography component={"span"} gutterBottom={true} variant={"h5"}>{title}</Typography>
             </Box>
-            <Grid container spacing={2}>
+            <Grid alignItems="stretch" container justify={"center"} spacing={2}>
                 <Grid item xs={12} sm={6} md={3}>
-                    <Card>
+                    <Box component={Card} height={"100%"}>
+                        <CardMedia>
+                            <Img fluid={data.movieTheaterImage.childImageSharp.fluid} />
+                        </CardMedia>
                         <CardContent>
                             <Box mb={2}>
                                 <Avatar size={"large"}>
@@ -45,10 +55,10 @@ query {
                                 presente em vários <i lang={"en"}>shoppings</i> do Brasil.
                             </Typography>
                         </CardContent>
-                    </Card>
+                    </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
-                    <Card>
+                    <Box component={Card} height={"100%"}>
                         <CardMedia>
                             <Img fluid={data.concertsImage.childImageSharp.fluid} />
                         </CardMedia>
@@ -64,10 +74,10 @@ query {
                                 Rede&nbsp;<abbr title={"Serviço Social do Comércio"}>SESC</abbr>.
                             </Typography>
                         </CardContent>
-                    </Card>
+                    </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
-                    <Card>
+                    <Box component={Card} height={"100%"}>
                         <CardContent>
                             <Box mb={2}>
                                 <Avatar size={"large"}>
@@ -79,10 +89,10 @@ query {
                                 Em parceria com a <strong>Livraria Cultura</strong>, você tem desconto na compra de&nbsp;livros.
                             </Typography>
                         </CardContent>
-                    </Card>
+                    </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
-                    <Card>
+                    <Box component={Card} height={"100%"}>
                         <CardContent>
                             <Box mb={2}>
                                 <Avatar size={"large"}>
@@ -94,7 +104,7 @@ query {
                                 Podemos indicar você para um curso, dependendo do seu propósito.
                             </Typography>
                         </CardContent>
-                    </Card>
+                    </Box>
                 </Grid>
             </Grid>
         </>
