@@ -14,7 +14,7 @@ export const Avatar = ({children, size, ...props}) => {
     const { large } = useStyles();
 
     return (
-        <MaterialAvatar className={size === "large" ? large : ""}>
+        <MaterialAvatar {...props} className={size === "large" ? large : ""}>
             {children}
         </MaterialAvatar>
     );

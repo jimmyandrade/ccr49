@@ -28,7 +28,7 @@ const TracksPage = ({ data }) => (
                     </Grid>
                     <Grid item xs={12} sm={4}>
                         <Card>
-                            <CardActionArea>
+                            <CardActionArea component={"a"} href={"https://exame.com/invest/minhas-financas/7-musicas-que-ensinam-sobre-dinheiro/"}>
                                 <CardMedia>
                                     <Img fluid={data.financeMusic.childImageSharp.fluid} />
                                 </CardMedia>

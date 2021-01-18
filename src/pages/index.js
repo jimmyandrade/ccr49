@@ -8,12 +8,13 @@ import {
     Card,
     CardContent,
     CardMedia,
-    Container, Divider,
+    Container,
     Grid,
     Typography
 } from "@material-ui/core";
 import {useSiteMetadata} from "../hooks/useSiteMetadata";
 import {BonusSection} from "../components/BonusSection";
+import {Helmet} from "react-helmet";
 
 // markup
 const IndexPage = ({ data }) => {
@@ -23,34 +24,44 @@ const IndexPage = ({ data }) => {
   return (
       <Layout>
         <Container component={"main"}>
-            <title>{title} - Valorize a sua jornada</title>
+            <Helmet>
+                <title>{title} - Valorize a sua jornada</title>
+            </Helmet>
             <Typography component={"h1"} variant={"srOnly"}>Página inicial</Typography>
             <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
-                    <Card>
+                    <Box component={Card} mb={2}>
                         <CardMedia>
-                            <Img fluid={data.file.childImageSharp.fluid} />
+                            <Img fluid={data.tracksImage.childImageSharp.fluid} />
                         </CardMedia>
                         <CardContent>
                             <Typography component={"h2"} gutterBottom={true} variant={"h4"}>Trilhas</Typography>
-                            <Typography component={"p"} paragraph={true} variant={"body2"}>Conteúdos agrupados e ordenados para facilitar sua aprendizagem</Typography>
+                            <Typography component={"p"} paragraph={true} variant={"body2"}>
+                                Conteúdos agrupados e ordenados para facilitar sua aprendizagem
+                            </Typography>
                             <Button component={GatsbyLink} to={"/trilhas"} variant={"outlined"}>Ver trilhas</Button>
                         </CardContent>
-                    </Card>
+                    </Box>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <Box component={Card} mb={2}>
+                        <CardMedia>
+                            <Img fluid={data.adsImage.childImageSharp.fluid} />
+                        </CardMedia>
                         <CardContent>
-                            <Typography component={"h2"} variant={"h2"}>Anuncie aqui</Typography>
+                            <Typography component={"h2"} gutterBottom={true} variant={"h4"}>Anuncie aqui</Typography>
+                            <Typography component={"p"} paragraph={true} variant={"body2"}>
+                                Ajude a manter nossa plataforma e apoiar jovens de todo o Brasil.
+                            </Typography>
+                            <Button href={"#"} variant={"outlined"}>Quero anunciar</Button>
                         </CardContent>
                     </Box>
                 </Grid>
             </Grid>
 
-            <Divider />
-
-            <BonusSection title={"Bônus UOU"} />
-
+            <Box my={5}>
+                <BonusSection title={"Bônus UOU"} />
+            </Box>
 
         </Container>
       </Layout>
@@ -59,7 +70,14 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
 query {
-    file(relativePath: { eq: "mulher-correndo-numa-trilha.jpeg" }) {
+    adsImage: file(relativePath: { eq: "mulher-segurando-circulo-e-computador.jpeg" }) {
+        childImageSharp {
+            fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid_withWebp
+            }
+        }
+    } 
+    tracksImage: file(relativePath: { eq: "mulher-correndo-numa-trilha.jpeg" }) {
         childImageSharp {
             fluid(maxWidth: 700) {
                 ...GatsbyImageSharpFluid_withWebp
