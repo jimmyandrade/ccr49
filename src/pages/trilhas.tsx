@@ -1,9 +1,11 @@
 import * as React from "react"
 import {Layout} from "../layout";
 import {Card, CardActionArea, CardContent, CardMedia, Container, Grid, Typography} from "@material-ui/core";
-import {graphql} from "gatsby";
-import Img from "gatsby-image";
-import { Link as GatsbyLink } from "gatsby";
+import Link from "next/link";
+import financeMusic from "../images/crianca-tocando-violao.jpeg";
+import soccerEmployment from "../images/menina-com-bola-de-futebol.jpeg";
+import traineeTrack from "../images/grupo-de-pessoas.jpeg";
+import Image from "next/image";
 
 const TracksPage = ({ data }) => (
     <Layout>
@@ -16,21 +18,23 @@ const TracksPage = ({ data }) => (
                 <Grid container spacing={1}>
                     <Grid item xs={12} sm={4}>
                         <Card>
-                            <CardActionArea component={GatsbyLink} to={"/trilhas/preparacao-programa-aprendiz-estagiario"}>
-                                <CardMedia>
-                                    <Img fluid={data.traineeTrack.childImageSharp.fluid} />
-                                </CardMedia>
-                                <CardContent>
-                                    <Typography component={"h3"} variant={"h6"}>Preparação para o programa<br />de aprendiz e estagiário</Typography>
-                                </CardContent>
-                            </CardActionArea>
+                            <Link href={"/trilhas/preparacao-programa-aprendiz-estagiario"} passHref={true}>
+                                <CardActionArea component={"a"}>
+                                    <CardMedia>
+                                        <Image src={traineeTrack} />
+                                    </CardMedia>
+                                    <CardContent>
+                                        <Typography component={"h3"} variant={"h6"}>Preparação para o programa<br />de aprendiz e estagiário</Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Link>
                         </Card>
                     </Grid>
                     <Grid item xs={12} sm={4}>
                         <Card>
                             <CardActionArea component={"a"} href={"https://exame.com/invest/minhas-financas/7-musicas-que-ensinam-sobre-dinheiro/"}>
                                 <CardMedia>
-                                    <Img fluid={data.financeMusic.childImageSharp.fluid} />
+                                    <Image src={financeMusic} />
                                 </CardMedia>
                                 <CardContent>
                                     <Typography component={"h3"} variant={"h6"}>Aprendendo finanças<br />através da música</Typography>
@@ -42,7 +46,7 @@ const TracksPage = ({ data }) => (
                         <Card>
                             <CardActionArea>
                                 <CardMedia>
-                                    <Img fluid={data.soccerEmployment.childImageSharp.fluid} />
+                                    <Image src={soccerEmployment} />
                                 </CardMedia>
                                 <CardContent>
                                     <Typography component={"h3"} variant={"h6"}>Paixão por futebol<br />e como encontrar um emprego</Typography>
@@ -57,30 +61,3 @@ const TracksPage = ({ data }) => (
 )
 
 export default TracksPage;
-
-
-export const query = graphql`
-query TrackImagesQuery {
-    financeMusic: file(relativePath: { eq: "crianca-tocando-violao.jpeg" }) {
-        childImageSharp {
-            fluid(maxWidth: 700) {
-                ...GatsbyImageSharpFluid_withWebp
-            }
-        }
-    }
-    soccerEmployment: file(relativePath: { eq: "menina-com-bola-de-futebol.jpeg" }) {
-        childImageSharp {
-            fluid(maxWidth: 700) {
-                ...GatsbyImageSharpFluid_withWebp
-            }
-        }
-    }
-    traineeTrack: file(relativePath: { eq: "grupo-de-pessoas.jpeg" }) {
-        childImageSharp {
-            fluid(maxWidth: 700) {
-                ...GatsbyImageSharpFluid_withWebp
-            }
-        }
-    }
-}
-`

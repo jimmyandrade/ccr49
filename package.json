@@ -1,36 +1,37 @@
 {
-  "name": "@ccr49/uou-jornada",
-  "version": "1.0.0",
+  "name": "ccr49",
   "private": true,
-  "description": "Jornada UOU website",
-  "author": "Time 49",
-  "keywords": [
-    "gatsby"
-  ],
+  "description": "Jornada UOU Website",
+  "main": "index.js",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "build": "next build",
+    "dev": "next dev",
+    "develop": "npm run dev",
+    "lint": "next lint",
+    "start": "next start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccr49/universidade.git"
+  },
+  "author": "Time 49",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccr49/universidade/issues"
+  },
+  "homepage": "https://github.com/ccr49/universidade#readme",
   "dependencies": {
+    "next": "11.0.1"
+  },
+  "devDependencies": {
     "@material-ui/core": "4.12.2",
     "@material-ui/icons": "4.11.2",
-    "@mdx-js/mdx": "1.6.22",
-    "@mdx-js/react": "1.6.22",
-    "gatsby": "2.32.13",
-    "gatsby-image": "2.11.0",
-    "gatsby-plugin-google-fonts": "1.0.1",
-    "gatsby-plugin-material-ui": "2.1.10",
-    "gatsby-plugin-mdx": "1.10.1",
-    "gatsby-plugin-react-helmet": "3.10.0",
-    "gatsby-plugin-sharp": "2.14.4",
-    "gatsby-source-filesystem": "2.11.1",
-    "gatsby-transformer-sharp": "2.12.1",
-    "query-string": "7.0.1",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
-    "react-helmet": "6.1.0"
+    "@types/react": "17.0.14",
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1",
+    "prop-types": "15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "typescript": "4.3.5"
   }
 }

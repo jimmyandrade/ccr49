@@ -18,7 +18,7 @@ export const Footer = ({title}) => {
         <Box className={root} color={"#ffffff"} component={"footer"}>
             <Box component={Container} pb={1} pt={2}>
                 <Typography component={"p"} paragraph={true} variant={"caption"}>
-                    <time dateTime={2021}>2021</time>
+                    <time dateTime={"2021"}>2021</time>
                     {" "}
                     <strong>{title}</strong>
                     {" "} - Valorize seu caminho

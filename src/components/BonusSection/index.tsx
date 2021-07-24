@@ -3,31 +3,11 @@ import * as React from "react";
 import {Avatar} from "../Avatar";
 import MovieIcon from "@material-ui/icons/Movie";
 import {ConfirmationNumber, LocalLibrary, PeopleAlt} from "@material-ui/icons";
-import {graphql, useStaticQuery} from "gatsby";
-import Img from "gatsby-image";
+import Image from "next/image";
+import concertsImage from "../../images/cantor-segura-microfone.jpeg";
+import movieTheaterImage from "../../images/interior-de-um-teatro.jpeg";
 
 export const BonusSection = ({title}) => {
-
-    const data = useStaticQuery(
-        graphql`
-query { 
-    concertsImage: file(relativePath: { eq: "cantor-segura-microfone.jpeg" }) {
-        childImageSharp {
-            fluid(maxWidth: 700) {
-                ...GatsbyImageSharpFluid_withWebp
-            }
-        }
-    }
-    movieTheaterImage: file(relativePath: { eq: "interior-de-um-teatro.jpeg" }) {
-        childImageSharp {
-            fluid(maxWidth: 700) {
-                ...GatsbyImageSharpFluid_withWebp
-            }
-        }
-    }
-}
-        `
-    )
 
     return (
         <>
@@ -37,11 +17,11 @@ query {
                 </Typography>
                 <Typography component={"span"} gutterBottom={true} variant={"h5"}>{title}</Typography>
             </Box>
-            <Grid alignItems="stretch" container justify={"center"} spacing={2}>
+            <Grid alignItems="stretch" container justifyContent={"center"} spacing={2}>
                 <Grid item xs={12} sm={6} md={3}>
                     <Box component={Card} height={"100%"}>
                         <CardMedia>
-                            <Img fluid={data.movieTheaterImage.childImageSharp.fluid} />
+                            <Image src={movieTheaterImage} />
                         </CardMedia>
                         <CardContent>
                             <Box mb={2}>
@@ -60,7 +40,7 @@ query {
                 <Grid item xs={12} sm={6} md={3}>
                     <Box component={Card} height={"100%"}>
                         <CardMedia>
-                            <Img fluid={data.concertsImage.childImageSharp.fluid} />
+                            <Image src={concertsImage} />
                         </CardMedia>
                         <CardContent>
                             <Box mb={2}>

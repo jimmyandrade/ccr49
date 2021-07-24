@@ -27,9 +27,9 @@ export const ProfileContent = ({fullName}) => (
         </Box>
         <Typography component={"h2"} variant={"h5"}>Conquistas de {fullName}</Typography>
         <List>
-            <ListItem primary={"Sabe-Tudo"}>
+            <ListItem>
                 <ListItemAvatar>
-                    <Avatar>
+                    <Avatar size={"medium"}>
                         <AllInclusive />
                     </Avatar>
                 </ListItemAvatar>

@@ -4,11 +4,11 @@ import {
     Button, Divider,
     Drawer,
     IconButton,
-    Link,
+    Link as MaterialLink,
     Toolbar,
     Typography
 } from "@material-ui/core";
-import {Link as GatsbyLink} from "gatsby";
+import Link from "next/link";
 import * as React from "react";
 import {Logo} from "../Logo";
 import {ProfileAvatar} from "../ProfileAvatar";
@@ -29,9 +29,11 @@ export const AppBar = ({title}) => {
         <MaterialAppBar color={"default"} position={"static"}>
             <Toolbar>
                 <Box flexGrow={1}>
-                    <Link component={GatsbyLink} to={"/"}>
-                        <Typography component={"h1"} variant={"srOnly"}>{title}</Typography>
-                        <Logo alt={`Logotipo de ${title}`}/>
+                    <Link href={"/"} passHref={true}>
+                        <MaterialLink component={"a"}>
+                            <Typography component={"h1"} variant={"srOnly"}>{title}</Typography>
+                            <Logo alt={`Logotipo de ${title}`}/>
+                        </MaterialLink>
                     </Link>
                 </Box>
                 <IconButton onClick={toggleDrawer(true)}>
