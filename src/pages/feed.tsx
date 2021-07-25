@@ -1,20 +1,13 @@
 import * as React from "react";
 import {Card, CardActions, CardContent, Container} from "@material-ui/core";
-import {Layout} from "../layout";
 
 const FeedPage = () => (
-    <Layout>
-        <Container>
-            <Card>
-                <CardContent>
-                    Nome da pessoa entrou na Jornada UOU
-                </CardContent>
-                <CardActions>
-
-                </CardActions>
-            </Card>
-        </Container>
-    </Layout>
-)
+  <Container component={"main"}>
+    <Card>
+      <CardContent>Nome da pessoa entrou na Jornada UOU</CardContent>
+      <CardActions />
+    </Card>
+  </Container>
+);
 
 export default FeedPage;

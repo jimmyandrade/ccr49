@@ -8,16 +8,16 @@ interface Props {
     size?: "large" | string;
 }
 
-export const ProfileAvatar : React.FunctionComponent<Props> = ({size, ...props}) => {
+export const ProfileAvatar : React.FunctionComponent<Props> = ({alt, size, ...otherProps}) => {
 
-    const avatarSize = React.useMemo(
-        () => size === "large" ? 77 : 40,
-        [size]
-    );
+  const avatarSize = React.useMemo(
+    () => size === "large" ? 77 : 40,
+    [size]
+  );
 
-    return (
-        <Avatar size={size}>
-            <Image {...props} height={avatarSize} src={avatar} width={avatarSize} />
-        </Avatar>
-    );
-}
+  return (
+    <Avatar size={size}>
+      <Image alt={alt} height={avatarSize} src={avatar} width={avatarSize} {...otherProps} />
+    </Avatar>
+  );
+};

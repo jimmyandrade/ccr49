@@ -1,8 +1,10 @@
-import { config } from "../../config";
+import {config} from "../../config";
+import {useMemo} from "react";
 
 export const useSiteMetadata = () => {
 
-    const {siteMetadata} = config;
-
-    return siteMetadata;
+    return useMemo(
+        () => config.siteMetadata,
+        []
+    );
 }

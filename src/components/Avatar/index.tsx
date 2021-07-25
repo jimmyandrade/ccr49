@@ -3,21 +3,21 @@ import * as React from "react";
 
 export const Avatar = ({children, size, ...props}) => {
 
-    const styles = {
-        large: {
-            height: 77,
-            width: 77
-        }
-    };
-    const useStyles = makeStyles(styles, { name: "ProfileAvatar" });
+  const styles = {
+    large: {
+      height: 77,
+      width: 77
+    }
+  };
+  const useStyles = makeStyles(styles, { name: "ProfileAvatar" });
 
-    const { large } = useStyles();
+  const { large } = useStyles();
 
-    return (
-        <MaterialAvatar {...props} className={size === "large" ? large : ""}>
-            {children}
-        </MaterialAvatar>
-    );
+  return (
+    <MaterialAvatar {...props} className={size === "large" ? large : ""}>
+      {children}
+    </MaterialAvatar>
+  );
 
 
-}
+};
