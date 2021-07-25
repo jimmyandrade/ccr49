@@ -37,6 +37,7 @@ Array [
           className="MuiCardMedia-root"
         >
           <Image
+            alt="Teatro com algumas luzes acesas e poltronas vermelhas"
             src="test-file-stub"
           />
         </div>
@@ -97,6 +98,7 @@ Array [
           className="MuiCardMedia-root"
         >
           <Image
+            alt="Homem negro segurando um microfone em um show, com iluminação vermelha"
             src="test-file-stub"
           />
         </div>
