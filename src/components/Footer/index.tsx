@@ -1,7 +1,11 @@
 import * as React from "react";
 import {Box, Container, Link, makeStyles, Typography} from "@material-ui/core";
 
-export const Footer = ({title}) => {
+type Props = {
+    title: string;
+}
+
+export const Footer : React.FunctionComponent<Props> = ({title}) => {
 
     const styles = {
         root: {
@@ -35,3 +39,5 @@ export const Footer = ({title}) => {
     );
 
 }
+
+export default Footer;

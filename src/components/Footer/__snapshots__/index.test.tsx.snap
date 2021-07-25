@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> component should match snapshot 1`] = `
+<footer
+  className="MuiBox-root MuiBox-root-2 Footer-root-1"
+>
+  <div
+    className="MuiContainer-root MuiBox-root MuiBox-root-3 MuiContainer-maxWidthLg"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-caption MuiTypography-paragraph"
+    >
+      <time
+        dateTime="2021"
+      >
+        2021
+      </time>
+       
+      <strong>
+        Test Title
+      </strong>
+       
+       - Valorize seu caminho
+      <br />
+      Crescimento. Evolução. Autonomia.
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-caption MuiTypography-paragraph"
+    >
+      <a
+        className="MuiTypography-root MuiLink-root MuiLink-underlineAlways MuiTypography-colorInherit"
+        href="#"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        Política de privacidade
+      </a>
+       
+      <a
+        className="MuiTypography-root MuiLink-root MuiLink-underlineAlways MuiTypography-colorInherit"
+        href="#"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        Proteção e uso de dados
+      </a>
+    </p>
+  </div>
+</footer>
+`;

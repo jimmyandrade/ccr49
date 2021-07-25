@@ -7,7 +7,11 @@ import Image from "next/image";
 import concertsImage from "../../images/cantor-segura-microfone.jpeg";
 import movieTheaterImage from "../../images/interior-de-um-teatro.jpeg";
 
-export const BonusSection = ({title}) => {
+type Props = {
+    title: string;
+}
+
+export const BonusSection : React.FunctionComponent<Props> = ({title}) => {
 
     return (
         <>

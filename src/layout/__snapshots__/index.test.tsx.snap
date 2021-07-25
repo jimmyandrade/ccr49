@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> component should match snapshot 1`] = `
+Array [
+  <div
+    className="MuiBox-root MuiBox-root-1"
+  >
+    <AppBar
+      title="Jornada UOU"
+    />
+  </div>,
+  "Test children",
+  <div
+    className="MuiBox-root MuiBox-root-2"
+  >
+    <Footer
+      title="Jornada UOU"
+    />
+  </div>,
+]
+`;

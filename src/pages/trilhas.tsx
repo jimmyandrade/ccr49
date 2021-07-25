@@ -6,8 +6,9 @@ import financeMusic from "../images/crianca-tocando-violao.jpeg";
 import soccerEmployment from "../images/menina-com-bola-de-futebol.jpeg";
 import traineeTrack from "../images/grupo-de-pessoas.jpeg";
 import Image from "next/image";
+import {NextPage} from "next";
 
-const TracksPage = ({ data }) => (
+const TracksPage : NextPage = () => (
     <Layout>
         <main>
         <Container >

@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BonusSection /> component should match snapshot 1`] = `
+Array [
+  <div
+    className="MuiBox-root MuiBox-root-1"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-overline"
+    >
+      Benefícios de 
+      <strong>
+        lazer
+      </strong>
+      , 
+      <strong>
+        cultura
+      </strong>
+       e oportunidades
+    </p>
+    <span
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+    >
+      Test title
+    </span>
+  </div>,
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-content-xs-center"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-2 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          className="MuiCardMedia-root"
+        >
+          <Image
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          className="MuiCardContent-root"
+        >
+          <div
+            className="MuiBox-root MuiBox-root-3"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-4 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            Cinema gratuito ou com desconto
+          </h3>
+          <p
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom MuiTypography-paragraph"
+          >
+            <strong>
+              Parceria
+            </strong>
+             com a 
+            <strong>
+              Cineart
+            </strong>
+            , presente em vários 
+            <i
+              lang="en"
+            >
+              shoppings
+            </i>
+             do Brasil.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-5 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          className="MuiCardMedia-root"
+        >
+          <Image
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          className="MuiCardContent-root"
+        >
+          <div
+            className="MuiBox-root MuiBox-root-6"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-7 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 10V6c0-1.11-.9-2-2-2H4c-1.1 0-1.99.89-1.99 2v4c1.1 0 1.99.9 1.99 2s-.89 2-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-2v-2h2v2zm0-4.5h-2v-2h2v2zm0-4.5h-2v-2h2v2z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            Acesso a shows e peças de teatro
+          </h3>
+          <p
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom MuiTypography-paragraph"
+          >
+            Pague mais barato ou até entre de graça em 
+            <strong>
+              parceria
+            </strong>
+             com a Rede 
+            <abbr
+              title="Serviço Social do Comércio"
+            >
+              SESC
+            </abbr>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-8 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          className="MuiCardContent-root"
+        >
+          <div
+            className="MuiBox-root MuiBox-root-9"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-10 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 11.55C9.64 9.35 6.48 8 3 8v11c3.48 0 6.64 1.35 9 3.55 2.36-2.19 5.52-3.55 9-3.55V8c-3.48 0-6.64 1.35-9 3.55zM12 8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            Desconto na compra de livros
+          </h3>
+          <p
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom MuiTypography-paragraph"
+          >
+            Em parceria com a 
+            <strong>
+              Livraria Cultura
+            </strong>
+            , você tem desconto na compra de livros.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-11 MuiPaper-elevation1 MuiPaper-rounded"
+      >
+        <div
+          className="MuiCardContent-root"
+        >
+          <div
+            className="MuiBox-root MuiBox-root-12"
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-13 MuiAvatar-colorDefault"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.67 13.13C18.04 14.06 19 15.32 19 17v3h4v-3c0-2.18-3.57-3.47-6.33-3.87z"
+                  fillRule="evenodd"
+                />
+                <circle
+                  cx="9"
+                  cy="8"
+                  fillRule="evenodd"
+                  r="4"
+                />
+                <path
+                  d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4c-.47 0-.91.1-1.33.24C14.5 5.27 15 6.58 15 8s-.5 2.73-1.33 3.76c.42.14.86.24 1.33.24zM9 13c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <h3
+            className="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
+          >
+            Indicação para oportunidades
+          </h3>
+          <p
+            className="MuiTypography-root MuiTypography-body2 MuiTypography-gutterBottom MuiTypography-paragraph"
+          >
+            Podemos indicar você para um curso, dependendo do seu propósito.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

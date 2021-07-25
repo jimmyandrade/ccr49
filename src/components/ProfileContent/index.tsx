@@ -14,7 +14,11 @@ import {Avatar} from "../Avatar";
 import {AllInclusive} from "@material-ui/icons";
 import * as React from "react";
 
-export const ProfileContent = ({fullName}) => (
+type Props = {
+    fullName: string
+};
+
+export const ProfileContent : React.FunctionComponent<Props> = ({fullName}) => (
     <>
         <Typography component={"h1"} variant={"h4"}>
             <ProfileAvatar alt={`Imagem de perfil de ${fullName}`} size={"large"} /> {fullName}

@@ -1,9 +1,9 @@
 import * as React from "react";
 import {Box} from "@material-ui/core";
-import {AppBar} from "../components/AppBar";
+import AppBar from "../components/AppBar";
 
 import {useSiteMetadata} from "../hooks/useSiteMetadata";
-import {Footer} from "../components/Footer";
+import Footer from "../components/Footer";
 
 export const Layout = ({children}) => {
 

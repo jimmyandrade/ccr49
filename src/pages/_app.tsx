@@ -6,18 +6,11 @@ import Head from "next/head";
 import {theme} from "../theme";
 import {CssBaseline, ThemeProvider} from "@material-ui/core";
 import { config } from "../config";
+import {useRemoveServerSideStyles} from "../hooks/useRemoveServerSideStyles";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
-    React.useEffect(
-        () => {
-            const jssStyles: Element = document.querySelector("#jss-server-side");
-            if(jssStyles) {
-                jssStyles.parentElement.removeChild<Element>(jssStyles);
-            }
-        },
-        []
-    );
+    useRemoveServerSideStyles();
 
     return (
         <React.Fragment>

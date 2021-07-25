@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
     AppBar as MaterialAppBar,
     Box,
@@ -9,21 +10,18 @@ import {
     Typography
 } from "@material-ui/core";
 import Link from "next/link";
-import * as React from "react";
 import {Logo} from "../Logo";
 import {ProfileAvatar} from "../ProfileAvatar";
 import {ProfileContent} from "../ProfileContent";
+import {useToggle} from "../../hooks/useToggle";
 
-export const AppBar = ({title}) => {
-    const [open, setOpen] = React.useState(false);
+export type AppBarProps = {
+    title: string;
+}
 
-    const toggleDrawer = (open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
+export const AppBar: React.FunctionComponent<AppBarProps> = ({title}) => {
 
-        setOpen(open);
-    };
+    const {open, toggle: toggleDrawer} = useToggle();
 
     return (
         <MaterialAppBar color={"default"} position={"static"}>
@@ -52,3 +50,5 @@ export const AppBar = ({title}) => {
         </MaterialAppBar>
     );
 }
+
+export default AppBar;

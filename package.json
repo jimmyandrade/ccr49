@@ -7,8 +7,12 @@
     "build": "next build",
     "dev": "next dev",
     "develop": "npm run dev",
+    "open-coverage": "open ./coverage/lcov-report/index.html",
+    "jest": "jest",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "test": "npm run jest",
+    "testu": "npm run jest -- -u"
   },
   "repository": {
     "type": "git",
@@ -26,12 +30,17 @@
   "devDependencies": {
     "@material-ui/core": "4.12.2",
     "@material-ui/icons": "4.11.2",
-    "@types/react": "17.0.14",
+    "@testing-library/react-hooks": "7.0.1",
+    "@types/jest": "26.0.24",
+    "@types/react": "17.0.15",
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
+    "jest": "27.0.6",
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-test-renderer": "17.0.2",
+    "ts-node": "10.1.0",
     "typescript": "4.3.5"
   }
 }
