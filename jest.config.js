@@ -9,7 +9,7 @@ const config = {
     "!**/__mocks__/**",
     "!**/coverage/**",
     "!**/node_modules/**",
-    "!**/*.{config,config}.{js,ts}",
+    "!**/*.{conf,config}.{js,ts}",
     "!**/*.d.ts",
   ],
   coverageDirectory: "coverage",
