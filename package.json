@@ -11,6 +11,7 @@
     "jest": "jest",
     "lint": "next lint",
     "start": "next start",
+    "stryker": "stryker run",
     "test": "npm run jest",
     "testu": "npm run jest -- -u"
   },
@@ -30,6 +31,8 @@
   "devDependencies": {
     "@material-ui/core": "4.12.2",
     "@material-ui/icons": "4.11.2",
+    "@stryker-mutator/core": "5.2.2",
+    "@stryker-mutator/jest-runner": "^5.2.2",
     "@testing-library/react-hooks": "7.0.1",
     "@types/jest": "26.0.24",
     "@types/react": "17.0.15",

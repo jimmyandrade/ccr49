@@ -3,3 +3,6 @@
 coverage/
 node_modules/
 public
+
+# stryker temp files
+.stryker-tmp
