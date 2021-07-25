@@ -9,7 +9,7 @@ export type AvatarProps = {
   size?: "medium" | "large"
 }
 
-export const Avatar : React.FunctionComponent<Props> = (
+export const Avatar : React.FunctionComponent<AvatarProps> = (
   {
     children,
     size,
