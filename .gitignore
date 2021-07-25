@@ -4,5 +4,6 @@ coverage/
 node_modules/
 public
 
-# stryker temp files
+# stryker files
 .stryker-tmp
+reports/mutation/html/index.html
