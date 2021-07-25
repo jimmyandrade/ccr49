@@ -109,7 +109,7 @@ Array [
             className="MuiBox-root MuiBox-root-6"
           >
             <div
-              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-7 MuiAvatar-colorDefault"
+              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-4 MuiAvatar-colorDefault"
             >
               <svg
                 aria-hidden={true}
@@ -150,16 +150,16 @@ Array [
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
     >
       <div
-        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-8 MuiPaper-elevation1 MuiPaper-rounded"
+        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-7 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           className="MuiCardContent-root"
         >
           <div
-            className="MuiBox-root MuiBox-root-9"
+            className="MuiBox-root MuiBox-root-8"
           >
             <div
-              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-10 MuiAvatar-colorDefault"
+              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-4 MuiAvatar-colorDefault"
             >
               <svg
                 aria-hidden={true}
@@ -194,16 +194,16 @@ Array [
       className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
     >
       <div
-        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-11 MuiPaper-elevation1 MuiPaper-rounded"
+        className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-9 MuiPaper-elevation1 MuiPaper-rounded"
       >
         <div
           className="MuiCardContent-root"
         >
           <div
-            className="MuiBox-root MuiBox-root-12"
+            className="MuiBox-root MuiBox-root-10"
           >
             <div
-              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-13 MuiAvatar-colorDefault"
+              className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-4 MuiAvatar-colorDefault"
             >
               <svg
                 aria-hidden={true}

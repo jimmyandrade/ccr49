@@ -231,7 +231,7 @@ exports[`Index page should match snapshot 1`] = `
               className="MuiBox-root MuiBox-root-9"
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-10 MuiAvatar-colorDefault"
+                className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-7 MuiAvatar-colorDefault"
               >
                 <svg
                   aria-hidden={true}
@@ -272,16 +272,16 @@ exports[`Index page should match snapshot 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
       >
         <div
-          className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-11 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-10 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
             className="MuiCardContent-root"
           >
             <div
-              className="MuiBox-root MuiBox-root-12"
+              className="MuiBox-root MuiBox-root-11"
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-13 MuiAvatar-colorDefault"
+                className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-7 MuiAvatar-colorDefault"
               >
                 <svg
                   aria-hidden={true}
@@ -316,16 +316,16 @@ exports[`Index page should match snapshot 1`] = `
         className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
       >
         <div
-          className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-14 MuiPaper-elevation1 MuiPaper-rounded"
+          className="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-12 MuiPaper-elevation1 MuiPaper-rounded"
         >
           <div
             className="MuiCardContent-root"
           >
             <div
-              className="MuiBox-root MuiBox-root-15"
+              className="MuiBox-root MuiBox-root-13"
             >
               <div
-                className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-16 MuiAvatar-colorDefault"
+                className="MuiAvatar-root MuiAvatar-circular ProfileAvatar-large-7 MuiAvatar-colorDefault"
               >
                 <svg
                   aria-hidden={true}

@@ -1,32 +1,28 @@
 import * as React from "react";
-import {makeStyles} from "@material-ui/core";
+import {useLogoStyles} from "../../hooks/useLogoStyles";
 
 interface Props {
-    alt: string;
+  alt: string;
+  id?: string;
 }
 
-export const Logo : React.FunctionComponent<Props> = ({ alt, ...otherProps }) => {
+export const Logo : React.FunctionComponent<Props> = (
+  {
+    alt,
+    id = "logo",
+    ...otherProps
+  }
+) => {
 
-  const styles = {
-    root: {
-      minHeight: 40,
-      maxHeight: 70,
-      minWidth: 70,
-    },
-    "svgClass1": { fill: "#b30000" },
-    "svgClass2": { fill: "#3c3623" }
-  };
-  const useStyles = makeStyles(styles, { name: "Logo" });
-
-  const { svgClass1, svgClass2, root } = useStyles();
+  const { svgClass1, svgClass2, root } = useLogoStyles();
 
   return (
     <svg
-      id="Camada_1"
+      id={id}
       className={root}
-      data-name="Camada 1"
-      xmlns="http://www.w3.org/2000/svg"
+      data-name={id}
       viewBox="0 0 160 93"
+      xmlns="http://www.w3.org/2000/svg"
       {...otherProps}
     >
       <title>{alt}</title>

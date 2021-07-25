@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "next build",
+    "build-storybook": "build-storybook",
     "dev": "next dev",
     "develop": "npm run dev",
     "open-coverage-report": "open ./coverage/lcov-report/index.html",
@@ -12,6 +13,7 @@
     "jest": "jest",
     "lint": "next lint",
     "start": "next start",
+    "storybook": "start-storybook -s ./public -p 6006",
     "stryker": "stryker run",
     "test": "npm run jest",
     "testu": "npm run jest -- -u"
@@ -30,13 +32,19 @@
     "next": "11.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.8",
     "@material-ui/core": "4.12.2",
     "@material-ui/icons": "4.11.2",
+    "@storybook/addon-actions": "^6.3.5",
+    "@storybook/addon-essentials": "^6.3.5",
+    "@storybook/addon-links": "^6.3.5",
+    "@storybook/react": "^6.3.5",
     "@stryker-mutator/core": "5.2.2",
     "@stryker-mutator/jest-runner": "5.2.2",
     "@testing-library/react-hooks": "7.0.1",
     "@types/jest": "26.0.24",
     "@types/react": "17.0.15",
+    "babel-loader": "^8.2.2",
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
     "jest": "27.0.6",

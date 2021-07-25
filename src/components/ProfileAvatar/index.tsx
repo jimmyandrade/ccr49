@@ -1,19 +1,23 @@
 import * as React from "react";
 import Image, {ImageProps} from "next/image";
-import {Avatar} from "../Avatar";
+import {Avatar, AvatarProps} from "../Avatar";
 import avatar from "../../images/avatar.jpeg";
+import {useAvatarSize} from "../../hooks/useAvatarSize";
 
 interface Props {
     alt: ImageProps["alt"];
-    size?: "large" | string;
+    size?: AvatarProps["size"];
 }
 
-export const ProfileAvatar : React.FunctionComponent<Props> = ({alt, size, ...otherProps}) => {
+export const ProfileAvatar : React.FunctionComponent<Props> = (
+  {
+    alt,
+    size,
+    ...otherProps
+  }
+) => {
 
-  const avatarSize = React.useMemo(
-    () => size === "large" ? 77 : 40,
-    [size]
-  );
+  const avatarSize = useAvatarSize(size);
 
   return (
     <Avatar size={size}>

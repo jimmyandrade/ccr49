@@ -1,5 +1,6 @@
 import * as React from "react";
-import {Box, Container, Link, makeStyles, Typography} from "@material-ui/core";
+import {Box, Container, Link, Typography} from "@material-ui/core";
+import {useFooterStyles} from "../../hooks/useFooterStyles";
 
 type Props = {
     title: string;
@@ -7,16 +8,7 @@ type Props = {
 
 export const Footer : React.FunctionComponent<Props> = ({title}) => {
 
-  const styles = {
-    root: {
-      backgroundColor: "#252525",
-      display: "block"
-    }
-  };
-
-  const useStyles = makeStyles(styles, {name: "Footer"});
-
-  const { root } = useStyles();
+  const { root } = useFooterStyles();
 
   return (
     <Box className={root} color={"#ffffff"} component={"footer"}>

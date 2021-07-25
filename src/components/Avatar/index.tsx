@@ -1,20 +1,28 @@
-import {Avatar as MaterialAvatar, makeStyles} from "@material-ui/core";
+import {Avatar as MaterialAvatar} from "@material-ui/core";
 import * as React from "react";
+import {useAvatarStyles} from "../../hooks/useAvatarStyles";
 
-export const Avatar = ({children, size, ...props}) => {
+export type AvatarProps = {
+  /**
+   * @default medium
+   */
+  size?: "medium" | "large"
+}
 
-  const styles = {
-    large: {
-      height: 77,
-      width: 77
-    }
-  };
-  const useStyles = makeStyles(styles, { name: "ProfileAvatar" });
+export const Avatar : React.FunctionComponent<Props> = (
+  {
+    children,
+    size,
+    ...props
+  }) => {
 
-  const { large } = useStyles();
+  const { large } = useAvatarStyles();
 
   return (
-    <MaterialAvatar {...props} className={size === "large" ? large : ""}>
+    <MaterialAvatar
+      className={size === "large" ? large : ""}
+      {...props}
+    >
       {children}
     </MaterialAvatar>
   );

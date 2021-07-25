@@ -4,8 +4,10 @@ const config = {
   collectCoverageFrom: [
     "**/*.{js,jsx,ts,tsx}",
     "!**/_*.{js,jsx,ts,tsx}",
+    "!**/*.stories.{js,jsx,ts,tsx}",
     "!**/.babelrc.{cjs,js}",
     "!**/.next/**",
+    "!**/.storybook/**",
     "!**/__mocks__/**",
     "!**/coverage/**",
     "!**/node_modules/**",

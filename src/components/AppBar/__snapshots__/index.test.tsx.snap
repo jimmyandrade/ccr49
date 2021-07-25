@@ -25,8 +25,8 @@ exports[`<AppBar /> component should match snapshot 1`] = `
         </h1>
         <svg
           className="Logo-root-2"
-          data-name="Camada 1"
-          id="Camada_1"
+          data-name="logo"
+          id="logo"
           viewBox="0 0 160 93"
           xmlns="http://www.w3.org/2000/svg"
         >
