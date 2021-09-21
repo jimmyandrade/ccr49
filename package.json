@@ -42,7 +42,7 @@
     "@stryker-mutator/core": "5.4.0",
     "@stryker-mutator/jest-runner": "5.4.0",
     "@testing-library/react-hooks": "7.0.2",
-    "@types/jest": "27.0.1",
+    "@types/jest": "27.0.2",
     "@types/react": "17.0.20",
     "babel-loader": "8.2.2",
     "eslint": "7.32.0",
